@@ -6,11 +6,11 @@ float32_t4 color;
 };
 
 ConstantBuffer<Material> gMaterial : register(b0);
-Texture2D<float32_t4> gTexure : register(t0)
+Texture2D<float32_t4> gTexture : register(t0);
 SamplerState gSampler : register(s0);
 
 struct PixelShaderOutput{
-float32_t4 color : SV_TARGETO;
+float32_t4 color : SV_TARGET0;
 };
 
 
